@@ -1,13 +1,9 @@
-$('.redButton').on('click', function() {
-  $('.colorBox').css('background','red');
-  $('.message').text('The circle is red');
-});
-
-
-
-$('.greenButton').on('click', function() {
-  $('.colorBox').css('background','green');
-  $('.message').text('The circle is green');
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeToggle();
+        $("#div2").fadeToggle("slow");
+        $("#div3").fadeToggle(3000);
+    });
 });
 
 // variable types
